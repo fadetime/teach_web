@@ -1,10 +1,17 @@
 <template>
     <div class="aboutus">
-        <div>
-            <img src="../../public/img/pic/aboutus.jpg">
+        <div class="aboutus_part1">
+			<div class="aboutus_part1_img">
+                <img src="../../public/img/pic/aboutus.jpg">
+            </div>
+            <div class="aboutus_part1_test">
+                <span>About Us</span>
+            </div>
         </div>
-		<div>
-            <img src="../../public/img/pic/aboutus2.jpg">
+		<div class="aboutus_part2">
+			<div class="aboutus_part2_frame">
+				<img src="../../public/img/pic/aboutus2.jpg">
+			</div>
         </div>
 		<div class="aboutus_text">
 			<div class="aboutus_text_title">
@@ -33,8 +40,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="aboutus_text_pic control_width">
-			<div>
+		<div class="aboutus_text_pic">
+			<div class="aboutus_part4_item">
 				<div>
 					<img src="../../public/img/icons/empty_pic.svg">
 				</div>
@@ -54,7 +61,7 @@
 					</ul>
 				</div>
 			</div>
-			<div>
+			<div class="aboutus_part4_item">
 				<div>
 					<img src="../../public/img/icons/empty_pic.svg">
 				</div>
@@ -67,7 +74,7 @@
 					</span>
 				</div>
 			</div>
-			<div>
+			<div class="aboutus_part4_item">
 				<div>
 					<img src="../../public/img/icons/empty_pic.svg">
 				</div>
@@ -101,8 +108,16 @@
 				</div>
 			</div>
 		</div>
-		<div>
-			<img src="../../public/img/pic/ourfamily.jpg" style="width:1000px;">
+		<div class="aboutus_part5">
+			<div style="position: relative">
+				<div class="aboutus_part5_img">
+					<img src="../../public/img/pic/ourfamily.jpg" style="width:1000px;">
+				</div>
+				<div class="aboutus_part5_text">
+					<span>Our Family</span>
+				</div>
+			</div>
+			
 		</div>
 		<div class="abouts_corporation_logo">
 			<div class="abouts_corporation_logo_frame">
@@ -130,14 +145,51 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
     </div>
 </template>
 
 <style scoped>
+.aboutus_part1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 48px 0;
+}
+.aboutus_part1_img{
+    width: 1024px;
+    height: 200px;
+}
+.aboutus_part1_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.aboutus_part1_test{
+    position: absolute;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    line-height: 200px;
+}
+.aboutus_part2{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.aboutus_part2_frame{
+	width: 800px;
+	height: 480px;
+}
+.aboutus_part2_frame img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
 .aboutus_text{
 	background-color: #f2f2f2;
+	margin-bottom: 40px;
 }
 .aboutus_text_title{
 	font-family: 'Arial Negreta cursiva', 'Arial Normal', 'Arial';
@@ -164,7 +216,8 @@
 }
 .aboutus_text_pic{
 	display: flex;
-	justify-content: space-between
+	justify-content: space-around;
+	margin-bottom: 40px;
 }
 .aboutus_text_pic_item_title{
 	font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
@@ -202,5 +255,31 @@
 .abouts_corporation_logo_content{
 	display: flex;
 	justify-content: center;
+}
+.aboutus_part4_item{
+	width: 300px;
+}
+.aboutus_part5{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.aboutus_part5_img{
+	width: 1024px;
+	height: 400px;
+}
+.aboutus_part5_img img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.aboutus_part5_text{
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
 }
 </style>

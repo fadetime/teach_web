@@ -1,51 +1,59 @@
 <template>
     <div id="curriculums">
-        <div>
-            <img src="../../public/img/pic/curriculums/curriculums.jpg">
+        <div class="curriculums_part1">
+            <div class="curriculums_part1_img">
+                <img src="../../public/img/pic/curriculums/curriculums.jpg">
+            </div>
+            <div class="curriculums_part1_test">
+                <span>curriculums</span>
+            </div>
         </div>
         <div class="curriculums_text">
-            <div class="curriculums_text_title">
-                Our Student Care Curriculum includes the following services:
+            <div class="curriculums_text_frame">
+                <div class="curriculums_text_title">
+                    Our Student Care Curriculum includes the following services:
+                </div>
+                <div class="curriculums_text_content">
+                    <ul style="margin-top: 0">
+                        <li>
+                            Fetching from designated schools at after-school dismissal hours
+                        </li>
+                        <li>
+                            Homework Supervision
+                        </li>
+                        <li>
+                            Student-centered Assessment based on MOE’s syllabus
+                        </li>
+                        <li>
+                            Character-Building Guidance
+                        </li>
+                        <li>
+                            Healthy Meals and Tea-Break
+                        </li>
+                        <li>
+                            Sports & Outdoor curriculums
+                        </li>
+                        <li>
+                            Silent Reading and Writing
+                        </li>
+                        <li>
+                            Rest and Relax
+                        </li>
+                        <li>
+                            Play and Recreation
+                        </li>
+                        <li>
+                            Enrichment curriculums
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="curriculums_text_content">
-                <ul style="margin-top: 0">
-                    <li>
-                        Fetching from designated schools at after-school dismissal hours
-                    </li>
-                    <li>
-                        Homework Supervision
-                    </li>
-                    <li>
-                        Student-centered Assessment based on MOE’s syllabus
-                    </li>
-                    <li>
-                        Character-Building Guidance
-                    </li>
-                    <li>
-                        Healthy Meals and Tea-Break
-                    </li>
-                    <li>
-                        Sports & Outdoor Activities
-                    </li>
-                    <li>
-                        Silent Reading and Writing
-                    </li>
-                    <li>
-                        Rest and Relax
-                    </li>
-                    <li>
-                        Play and Recreation
-                    </li>
-                    <li>
-                        Enrichment Activities
-                    </li>
-                </ul>
-            </div>
+            
         </div>
         <div class="curriculums_break">
             <span>Overview</span>
         </div>
-        <div>
+        <div style="margin-bottom: 60px">
             <div class="curriculums_part4_item">
                 <div>
                     <img src="../../public/img/pic/curriculums/course1.jpg" class="curriculums_part4_img">
@@ -110,11 +118,41 @@
     </div>
 </template>
 <style scoped>
+.curriculums_part1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 48px 0;
+}
+.curriculums_part1_img{
+    width: 1024px;
+    height: 200px;
+}
+.curriculums_part1_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.curriculums_part1_test{
+    position: absolute;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    line-height: 200px;
+}
 .curriculums_text{
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.curriculums_text_frame{
+    width: 452px;
 }
 .curriculums_text_title{
     line-height: 30px;
+    text-align: left;
 }
 .curriculums_text_content{
     text-align: left;
@@ -126,10 +164,12 @@
     font-size: 28px;
     font-weight: 700;
     background-color: #f2f2f2;
+    margin-bottom: 40px;
 }
 .curriculums_part4_item{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 .curriculums_part4_img{
     width: 440px;
@@ -137,6 +177,7 @@
 }
 .curriculums_part4_item_right{
     width: 518px;
+    padding: 10px 30px;
 }
 .curriculums_part4_item_right_title{
     font-size: 28px;
