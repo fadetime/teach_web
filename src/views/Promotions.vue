@@ -41,4 +41,10 @@
 .promotions_part2{
     margin: 40px 0;
 }
+@media screen and (max-width: 1023px) {
+    .promotions_part2 img{
+        width: 100%
+    }
+}
+
 </style>

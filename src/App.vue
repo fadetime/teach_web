@@ -4,18 +4,21 @@
         <web-menu />
         <router-view />
 		<bottomBar />
+        <loading />
     </div>
 </template>
 <script>
 import topBar from "@/components/topBar.vue";
 import webMenu from "@/components/menu.vue";
 import bottomBar from "@/components/bottomBar.vue";
+import loading from "@/components/loading.vue";
 
 export default {
     components: {
         topBar,
         webMenu,
-        bottomBar
+        bottomBar,
+        loading
     }
 };
 </script>
@@ -30,5 +33,10 @@ export default {
 .control_width {
     width: 1024px;
     margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+    .control_width{
+        width: 100%;
+    }
 }
 </style>

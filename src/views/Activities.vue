@@ -33,7 +33,7 @@
                     <div class="activities_button">See More</div>
                 </div>
             </div>
-            <div style="margin:0 40px;">
+            <div class="activities_part3_item" style="margin:10px 40px;">
                 <div class="activities_part3_item_img">
                     <img src="../../public/img/pic/activities/blue.jpg">
                 </div>
@@ -49,7 +49,7 @@
                     <div class="activities_button">See More</div>
                 </div>
             </div>
-            <div>
+            <div class="activities_part3_item">
                 <div class="activities_part3_item_img">
                     <img src="../../public/img/pic/activities/red.jpg">
                 </div>
@@ -108,6 +108,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.activities_part3_item{
+    margin: 10px 0;
 }
 .activities_part3_item_img{
     width: 296px;

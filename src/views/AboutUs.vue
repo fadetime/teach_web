@@ -111,7 +111,7 @@
 		<div class="aboutus_part5">
 			<div style="position: relative">
 				<div class="aboutus_part5_img">
-					<img src="../../public/img/pic/ourfamily.jpg" style="width:1000px;">
+					<img src="../../public/img/pic/ourfamily.jpg">
 				</div>
 				<div class="aboutus_part5_text">
 					<span>Our Family</span>
@@ -190,6 +190,7 @@
 .aboutus_text{
 	background-color: #f2f2f2;
 	margin-bottom: 40px;
+	padding: 0 10px;
 }
 .aboutus_text_title{
 	font-family: 'Arial Negreta cursiva', 'Arial Normal', 'Arial';
@@ -218,6 +219,7 @@
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 40px;
+	flex-wrap: wrap;
 }
 .aboutus_text_pic_item_title{
 	font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
@@ -255,9 +257,11 @@
 .abouts_corporation_logo_content{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .aboutus_part4_item{
 	width: 300px;
+	margin: 10px 0;
 }
 .aboutus_part5{
 	position: relative;
@@ -281,5 +285,10 @@
 	font-size: 32px;
 	font-weight: 700;
 	color: #fff;
+}
+@media screen and (max-width: 1023px) {
+    .aboutus_part5_img{
+        width: 100%;
+    }
 }
 </style>

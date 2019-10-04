@@ -161,11 +161,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 .reviews_part2_left{
     width: 200px;
     height: 200px;
     background-color: #f2f2f2;
+    margin: 10px 0;
 }
 .reviews_part2_right{
     width: 700px;
@@ -174,10 +176,12 @@
     flex-direction: column;
     justify-content: space-around;
     padding-left: 20px;
+    margin: 10px 0;
 }
 .reviews_part3{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .reviews_part3_colum_item{
     width: 300px;
@@ -225,10 +229,12 @@
 	display: flex;
 	justify-content: space-around;
     padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 .aboutus_corporation{
 	width: 150px;
 	height: 150px;
+    margin: 10px 0;
 }
 .aboutus_corporation img{
 	object-fit: contain;

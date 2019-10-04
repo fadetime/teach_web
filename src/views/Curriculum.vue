@@ -170,6 +170,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 .curriculums_part4_img{
     width: 440px;
@@ -183,5 +184,13 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 80px;
+}
+@media screen and (max-width: 1023px) {
+    .curriculums_part1_img{
+        width: 100%;
+    }
+    .curriculums_part4_img{
+        width: 100%;
+    }
 }
 </style>

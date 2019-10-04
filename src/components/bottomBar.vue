@@ -49,4 +49,9 @@
     height: 60px;
     line-height: 60px;
 }
+@media screen and (max-width: 1023px) {
+    .bottombar_top{
+        display: none;
+    }
+}
 </style>

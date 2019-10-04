@@ -76,4 +76,9 @@ export default {
     width: 120px;
     cursor: pointer;
 }
+@media screen and (max-width: 1023px) {
+    #webmenu{
+        display: none;
+    }
+}
 </style>

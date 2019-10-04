@@ -61,6 +61,8 @@
 }
 .gallery_part2_frame{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .gallery_part2_item{
     width: 300px;

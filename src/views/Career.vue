@@ -99,11 +99,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 .career_part2_item{
     width: 200px;
     height: 150px;
-    margin: 0 20px;
+    margin: 10px 20px;
 }
 .career_part2_item img{
     object-fit: cover;
@@ -138,5 +139,20 @@
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 40px;
+}
+@media screen and (max-width: 1023px) {
+    .career_part2_item{
+        width: 100%;
+        height: 255px;
+    }
+    .career_part3{
+        padding: 0 10px;
+    }
+    .career_part3_content{
+        width: 100%;
+    }
+    .career_part4_content{
+        width: 100%;
+    }
 }
 </style>
