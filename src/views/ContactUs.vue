@@ -82,7 +82,7 @@
 
 <script>
 import axios from 'axios'
-
+import sysConfig from '../../public/js/config'
 export default {
     computed:{
         lang(){
@@ -133,7 +133,7 @@ export default {
                     }
                 }else{
                     this.$store.dispatch('setLoading', true)
-                    axios.post('http://127.0.0.1:3000/mail/',{
+                    axios.post(sysConfig.server+'/mail/',{
                         userName: this.userName,
                         emailAddress: this.emailAddress,
                         subject: this.subject,
